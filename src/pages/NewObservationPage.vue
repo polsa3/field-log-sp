@@ -1,26 +1,8 @@
-<script setup>
-import { ref } from 'vue'
-const nazivOpazanja = ref('')
-const opisOpazanja = ref('')
-</script>
-
 <template>
-  <h1>Novo opažanje</h1>
-  <br />
-  <q-input outlined v-model="nazivOpazanja" label="Naziv opažanja" />
-  <br />
-  <q-input outlined v-model="opisOpazanja" type="textarea" label="Opis opažanja" />
-  <br />
-  <p>Naziv: {{ nazivOpazanja }}</p>
-  <br />
-  <p>Opis: {{ opisOpazanja }}</p>
-  <br />
-  <q-btn to="/" color="purple" label="Povratak" />
+  <q-page class="q-pa-md">
+    <h1 class="text-h5">Novo opažanje</h1>
+    <p>Ovdje će se unositi novo opažanje.</p>
+    <p>Svaki put kada se želi zabilježiti novo opažanje, 
+        tu se ispunjuju podatci o njemu, poput opisa.</p>
+  </q-page>
 </template>
-
-<style>
-.naslov {
-  color: red;
-  font-weight: bold;
-}
-</style>
